@@ -1,0 +1,221 @@
+:root {
+    --color-primary: #3A5F7D;
+    --color-secondary: #62B6CB;
+    --color-accent: #A4D4D6;
+    --color-text: #2C3E50;
+    --color-bg: #F4F1EE;
+    --color-border: #B4C4BC;
+
+
+    --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+
+@media (min-width: 768px) {
+    .dataset-intro__logo {
+        max-width: 200px;
+    }
+
+    .dataset-dataset-intro__header_logo_and_title {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* On mobile, change flex-direction to row and scale logo */
+@media (max-width: 768px) {
+    .dataset-dataset-intro__header_logo_and_title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .dataset-intro__logo {
+        height: 5em;
+        /* scales to the font size of the title */
+        width: auto;
+        object-fit: contain;
+    }
+}
+
+
+.dataset-intro {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-md);
+}
+
+.dataset-intro__header {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.dataset-intro__title {
+    font-size: 2.5rem;
+    margin: 0;
+    color: var(--color-primary);
+}
+
+.dataset-intro__subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text);
+    margin-top: var(--spacing-xs);
+}
+
+.dataset-intro__section {
+    margin-bottom: var(--spacing-lg);
+}
+
+.dataset-intro__section-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+.dataset-intro__section-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.dataset-intro__cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.dataset-intro__card {
+    background-color: #fff;
+    border: 1px solid var(--color-border);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dataset-intro__card-title {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-primary);
+}
+
+.dataset-intro__card-text {
+    font-size: 1rem;
+}
+
+.dataset-intro__use-cases-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.dataset-intro__use-cases-list .dataset-intro__use-cases-item::before {
+    content: "●";
+    color: var(--color-secondary);
+    margin-right: 0.5rem;
+}
+
+.dataset-intro__use-cases-item {
+    margin-bottom: var(--spacing-xs);
+    font-size: 1rem;
+}
+
+.dataset-intro_metric_cards-grid {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling on iOS */
+}
+
+.dataset-intro_metric_cards-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.dataset-intro_metric_cards-grid::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.dataset-intro__detector-card {
+    flex: 0 0 auto;
+    min-width: 220px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dataset-intro__detector-card-title {
+    margin: 0 0 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.dataset-intro__detector-metric {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dataset-intro__detector-metric li {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.dataset-intro__citation-text {
+    font-family: monospace;
+    background-color: #f4f4f4;
+    padding: var(--spacing-xs);
+    border-radius: 4px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.dataset-intro__citation {
+    margin-top: var(--spacing-lg);
+    background-color: #fff;
+    border: 1px solid var(--color-border);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dataset-intro__citation-title {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-primary);
+}
+
+.dataset-intro__footer {
+    margin-top: var(--spacing-lg);
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.dataset-intro__use-cases-item strong {
+    font-weight: bold;
+    color: var(--color-primary);
+    /* or any accent color */
+}
