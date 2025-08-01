@@ -5,6 +5,7 @@
     --color-text: #2C3E50;
     --color-bg: #F4F1EE;
     --color-border: #B4C4BC;
+    --color-white: #f9f9f9;
     --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -99,11 +100,10 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--spacing-md);
-    margin-bottom: var(--spacing-md);
 }
 
 .dataset-intro__card {
-    background-color: #fff;
+    background-color: var(--color-white);
     border: 1px solid var(--color-border);
     padding: var(--spacing-md);
     border-radius: 8px;
@@ -118,6 +118,18 @@ body {
 
 .dataset-intro__card-text {
     font-size: 1rem;
+}
+
+.dataset-intro__section-title {
+    margin: 16px 0px 8px 0px;
+}
+
+.dataset-intro__section-subtitle {
+    margin: 8px 0 0 0;
+}
+
+.dataset-intro__section-text{
+    margin: 8px 0;
 }
 
 
@@ -139,7 +151,29 @@ body {
 }
 
 .dataset-intro__card-image {
-    height: 520px;
+    height: 520px;   
+    min-width: 500px; 
+    display: block;
+}
+
+
+/* Summery */
+.dataset-intro__summery {
+    margin: var(--spacing-xs);
+}
+
+.dataset-intro__summery-heading {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dataset-intro__summery-details {
+    margin: 8px 16px;
+    background: var(--color-accent);
+    border: 1px solid var(--color-border);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 /* Metric Cards */
@@ -156,8 +190,8 @@ body {
 .dataset-intro__detector-card {
     flex: 0 0 auto;
     min-width: 220px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
     border-radius: 6px;
     padding: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -184,18 +218,18 @@ body {
 
 
 /* List Styles */
-.dataset-intro__use-cases-list {
+.dataset-intro__list {
     list-style: none;
     padding-left: 0;
 }
 
-.dataset-intro__use-cases-list .dataset-intro__use-cases-item::before {
+.dataset-intro__list .dataset-intro__list-item::before {
     content: "●";
     color: var(--color-secondary);
-    margin-right: 0.5rem;
+    margin-right: var(--spacing-xs);
 }
 
-.dataset-intro__use-cases-item {
+.dataset-intro__list-item {
     margin-bottom: var(--spacing-xs);
     font-size: 1rem;
 }
@@ -203,7 +237,7 @@ body {
 /* Citation Styles */
 .dataset-intro__citation {
     margin-top: var(--spacing-lg);
-    background-color: #fff;
+    background-color: var(--color-bg);
     border: 1px solid var(--color-border);
     padding: var(--spacing-md);
     border-radius: 8px;
@@ -218,7 +252,7 @@ body {
 
 .dataset-intro__citation-text {
     font-family: monospace;
-    background-color: #f4f4f4;
+    background-color: var(--color-white);
     padding: var(--spacing-xs);
     border-radius: 4px;
     white-space: pre-wrap;
@@ -230,6 +264,5 @@ body {
     margin-top: var(--spacing-lg);
     text-align: center;
     font-size: 0.9rem;
-    color: #777;
+    color: (var(--color-secondary));
 }
-
