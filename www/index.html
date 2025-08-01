@@ -17,185 +17,203 @@
                 <img src="assets/icons/Logo.svg" alt="BONK-pose Logo" class="dataset-intro__logo" />
                 <h1 class="dataset-intro__title">BONK-pose</h1>
             </div>
-    <p class="dataset-intro__subtitle">A 6D Pose Estimation Dataset for Marine Vessels</p>
-    </header>
+            <p class="dataset-intro__subtitle">A 6D Pose Estimation Dataset for Marine Vessels</p>
+        </header>
 
-    <section class="dataset-intro__section dataset-intro__section--overview">
-        <h2 class="dataset-intro__section-title">Overview</h2>
-        <p class="dataset-intro__section-text">
-            The Bonk-pose dataset is a novel, publicly available 6D pose estimation dataset for marine vessels,
-            created by fusing monocular RGB images with Automatic Identification System (AIS) data. It addresses the
-            gap in maritime datasets by providing fully annotated 3D bounding boxes for vessel pose estimation.
-        </p>
-    </section>
+        <section class="dataset-intro__section dataset-intro__section--overview">
+            <h2 class="dataset-intro__section-title">Overview</h2>
+            <p class="dataset-intro__section-text">
+                The Bonk-pose dataset is a novel, publicly available 6D pose estimation dataset for marine vessels,
+                created by fusing monocular RGB images with Automatic Identification System (AIS) data. It addresses the
+                gap in maritime datasets by providing fully annotated 3D bounding boxes for vessel pose estimation.
+            </p>
+        </section>
 
-    <section class="dataset-intro__section">
-        <h2 class="dataset-intro__section-title">Annotations</h2>
-        <div class="dataset-intro__cards-grid">
-            <div class="dataset-intro__card">
-                <h3 class="dataset-intro__card-title">6D Pose Estimation</h3>
-                <ul class="dataset-intro__bullet-list">
-                    <li class="dataset-intro__bullet-item">3,753 images with 3D bounding box annotations including
-                        location, vessel dimensions and orientation.</li>
-                    <li class="dataset-intro__bullet-item">3,829 vessel annotations</li>
-                </ul>
+        <section class="dataset-intro__section dataset-intro__section--images">
+            <h2 class="dataset-intro__section-title">6D pose annotation showcase</h2>
+            <div class="dataset-intro__cards-grid">
+                <div class="dataset-intro__card">
+                    <div class="dataset-intro__image-container">
+                        <img src="assets/images/6D_dataset_result_samples/1.jpeg" alt="Image 1"
+                            class="dataset-intro__card-image">
+                    </div>
+                </div>
+                <div class="dataset-intro__card">
+                    <div class="dataset-intro__image-container">
+                        <img src="assets/images/6D_dataset_result_samples/2.jpeg" alt="Image 2"
+                            class="dataset-intro__card-image">
+                    </div>
+                </div>
             </div>
-            <div class="dataset-intro__card">
-                <h3 class="dataset-intro__card-title">Object Detection</h3>
-                <ul class="dataset-intro__bullet-list">
-                    <li class="dataset-intro__bullet-item">1,000 images with 2D bounding box annotations for vessel
-                        detection.</li>
-                    <li class="dataset-intro__bullet-item">1463 Vessels annotated in the foreground</li>
-                    <li class="dataset-intro__bullet-item">3957 Vessels and vessel like objects annotated</li>
-                </ul>
-            </div>
-            <div class="dataset-intro__card">
-                <h3 class="dataset-intro__card-title">Pose and Detection</h3>
-                <p class="dataset-intro__card-text">245 images shared between the 6D and 2D datasets.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="dataset-intro__section">
-        <h2 class="dataset-intro__section-title">6D pose estimation</h2>
-        <div class="dataset-intro__cards-grid">
-            <div class="dataset-intro__card">
-                <h3 class="dataset-intro__card-title">Created without human annotation cost</h3>
-                <p class="dataset-intro__card-text">Annotations are created by an automated data fusion approach,
-                    making time-consuming human pose annotations unnecessary.<br> Annotations include vessel
-                    centroid location in the real world, vessel dimensions and the directions of the vessel
-                    coordinite system axes in the real world. <br> Intrinsic camera matrix is provided to project
-                    this data into the image.</p>
+        <section class="dataset-intro__section">
+            <h2 class="dataset-intro__section-title">Annotations</h2>
+            <div class="dataset-intro__cards-grid">
+                <div class="dataset-intro__card">
+                    <h3 class="dataset-intro__card-title">6D Pose Estimation</h3>
+                    <ul class="dataset-intro__bullet-list">
+                        <li class="dataset-intro__bullet-item">3,753 images with 3D bounding box annotations including
+                            location, vessel dimensions and orientation.</li>
+                        <li class="dataset-intro__bullet-item">3,829 vessel annotations</li>
+                    </ul>
+                </div>
+                <div class="dataset-intro__card">
+                    <h3 class="dataset-intro__card-title">Object Detection</h3>
+                    <ul class="dataset-intro__bullet-list">
+                        <li class="dataset-intro__bullet-item">1,000 images with 2D bounding box annotations for vessel
+                            detection.</li>
+                        <li class="dataset-intro__bullet-item">1463 Vessels annotated in the foreground</li>
+                        <li class="dataset-intro__bullet-item">3957 Vessels and vessel like objects annotated</li>
+                    </ul>
+                </div>
+                <div class="dataset-intro__card">
+                    <h3 class="dataset-intro__card-title">Pose and Detection</h3>
+                    <p class="dataset-intro__card-text">245 images shared between the 6D and 2D datasets.</p>
+                </div>
             </div>
-            <div class="dataset-intro__card">
-                <h3 class="dataset-intro__card-title">Automatic Annotation Quality</h3>
-                <p class="dataset-intro__card-text">86.4% of vessels labeled on par with human annotations.<br>94.5%
-                    of annotations are deemed of acceptable quality.</p>
+        </section>
+
+        <section class="dataset-intro__section">
+            <h2 class="dataset-intro__section-title">6D pose estimation</h2>
+            <div class="dataset-intro__cards-grid">
+                <div class="dataset-intro__card">
+                    <h3 class="dataset-intro__card-title">Created without human annotation cost</h3>
+                    <p class="dataset-intro__card-text">Annotations are created by an automated data fusion approach,
+                        making time-consuming human pose annotations unnecessary.<br> Annotations include vessel
+                        centroid location in the real world, vessel dimensions and the directions of the vessel
+                        coordinite system axes in the real world. <br> Intrinsic camera matrix is provided to project
+                        this data into the image.</p>
+                </div>
+                <div class="dataset-intro__card">
+                    <h3 class="dataset-intro__card-title">Automatic Annotation Quality</h3>
+                    <p class="dataset-intro__card-text">86.4% of vessels labeled on par with human annotations.<br>94.5%
+                        of annotations are deemed of acceptable quality.</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="dataset-intro__section">
-        <h2 class="dataset-intro__section-title">Object detection</h2>
-        <div class="dataset-intro__cards-grid">
-            <div class="dataset-intro__card">
-                <h3 class="dataset-intro__card-title">Human annotations</h3>
-                <p class="dataset-intro__card-text">Object detection bounding boxes were created by humans. Vessels
-                    are annotated in five classes. The classes allow differentiation between vessels in the
-                    foreground, moving vessels and vessels part of the background.</p>
+        </section>
+        <section class="dataset-intro__section">
+            <h2 class="dataset-intro__section-title">Object detection</h2>
+            <div class="dataset-intro__cards-grid">
+                <div class="dataset-intro__card">
+                    <h3 class="dataset-intro__card-title">Human annotations</h3>
+                    <p class="dataset-intro__card-text">Object detection bounding boxes were created by humans. Vessels
+                        are annotated in five classes. The classes allow differentiation between vessels in the
+                        foreground, moving vessels and vessels part of the background.</p>
+                </div>
+                <div class="dataset-intro__card">
+                    <h3 class="dataset-intro__card-title">Object classes</h3>
+                    <ul class="dataset-intro__use-cases-list">
+                        <li class="dataset-intro__use-cases-item">
+                            <strong>Ship</strong> – Full vessels in the frame.
+                        </li>
+                        <li class="dataset-intro__use-cases-item">
+                            <strong>Ship Leaving Frame</strong> – Vessels partially out of the frame.
+                        </li>
+                        <li class="dataset-intro__use-cases-item">
+                            <strong>Ship Moored</strong> – Vessels anchored and stationary in the background.
+                        </li>
+                        <li class="dataset-intro__use-cases-item">
+                            <strong>Ship Partial</strong> – Partially visible or occluded vessels.
+                        </li>
+                        <li class="dataset-intro__use-cases-item">
+                            <strong>Subvessel</strong> – Independent units within a multi-vessel setup.
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="dataset-intro__card">
-                <h3 class="dataset-intro__card-title">Object classes</h3>
-                <ul class="dataset-intro__use-cases-list">
-                    <li class="dataset-intro__use-cases-item">
-                        <strong>Ship</strong> – Full vessels in the frame.
-                    </li>
-                    <li class="dataset-intro__use-cases-item">
-                        <strong>Ship Leaving Frame</strong> – Vessels partially out of the frame.
-                    </li>
-                    <li class="dataset-intro__use-cases-item">
-                        <strong>Ship Moored</strong> – Vessels anchored and stationary in the background.
-                    </li>
-                    <li class="dataset-intro__use-cases-item">
-                        <strong>Ship Partial</strong> – Partially visible or occluded vessels.
-                    </li>
-                    <li class="dataset-intro__use-cases-item">
-                        <strong>Subvessel</strong> – Independent units within a multi-vessel setup.
-                    </li>
-                </ul>
+            <div class=" dataset-intro__cards-grid dataset-intro_metric_cards-grid ">
+                <div class="dataset-intro__detector-card">
+                    <h4 class="dataset-intro__detector-card-title">YOLOX-X</h4>
+                    <ul class="dataset-intro__detector-metric">
+                        <li class="dataset-intro__detector-metric">mAP@0.5:95: 0.626</li>
+                        <li class="dataset-intro__detector-metric">mAP@0.5: 0.805</li>
+                        <li class="dataset-intro__detector-metric">AR: 0.756</li>
+                    </ul>
+                </div>
+                <div class="dataset-intro__detector-card">
+                    <h4 class="dataset-intro__detector-card-title">YOLOX-L</h4>
+                    <ul class="dataset-intro__detector-metric">
+                        <li class="dataset-intro__detector-metric">mAP@0.5:95: 0.603</li>
+                        <li class="dataset-intro__detector-metric">mAP@0.5: 0.794</li>
+                        <li class="dataset-intro__detector-metric">AR: 0.746</li>
+                    </ul>
+                </div>
+                <div class="dataset-intro__detector-card">
+                    <h4 class="dataset-intro__detector-card-title">YOLOX-S</h4>
+                    <ul class="dataset-intro__detector-metric">
+                        <li class="dataset-intro__detector-metric">mAP@0.5:95: 0.542</li>
+                        <li class="dataset-intro__detector-metric">mAP@0.5: 0.764</li>
+                        <li class="dataset-intro__detector-metric">AR: 0.698</li>
+                    </ul>
+                </div>
+                <div class="dataset-intro__detector-card">
+                    <h4 class="dataset-intro__detector-card-title">YOLOv3</h4>
+                    <ul class="dataset-intro__detector-metric">
+                        <li class="dataset-intro__detector-metric">mAP@0.5:95: 0.379</li>
+                        <li class="dataset-intro__detector-metric">mAP@0.5: 0.659</li>
+                        <li class="dataset-intro__detector-metric">AR: 0.549</li>
+                    </ul>
+                </div>
+                <div class="dataset-intro__detector-card">
+                    <h4 class="dataset-intro__detector-card-title">DETR</h4>
+                    <ul class="dataset-intro__detector-metric">
+                        <li class="dataset-intro__detector-metric">mAP@0.5:95: 0.451</li>
+                        <li class="dataset-intro__detector-metric">mAP@0.5: 0.696</li>
+                        <li class="dataset-intro__detector-metric">AR: 0.645</li>
+                    </ul>
+                </div>
+                <div class="dataset-intro__detector-card">
+                    <h4 class="dataset-intro__detector-card-title">Def. DETR</h4>
+                    <ul class="dataset-intro__detector-metric">
+                        <li class="dataset-intro__detector-metric">mAP@0.5:95: 0.510</li>
+                        <li class="dataset-intro__detector-metric">mAP@0.5: 0.737</li>
+                        <li class="dataset-intro__detector-metric">AR: 0.703</li>
+                    </ul>
+                </div>
+                <div class="dataset-intro__detector-card">
+                    <h4 class="dataset-intro__detector-card-title">Def. DETR 2-Stage</h4>
+                    <ul class="dataset-intro__detector-metric">
+                        <li class="dataset-intro__detector-metric">mAP@0.5:95: 0.585</li>
+                        <li class="dataset-intro__detector-metric">mAP@0.5: 0.775</li>
+                        <li class="dataset-intro__detector-metric">AR: 0.761</li>
+                    </ul>
+                </div>
+                <div class="dataset-intro__detector-card">
+                    <h4 class="dataset-intro__detector-card-title">Cascade R-CNN r50</h4>
+                    <ul class="dataset-intro__detector-metric">
+                        <li class="dataset-intro__detector-metric">mAP@0.5:95: 0.511</li>
+                        <li class="dataset-intro__detector-metric">mAP@0.5: 0.725</li>
+                        <li class="dataset-intro__detector-metric">AR: 0.680</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class=" dataset-intro__cards-grid dataset-intro_metric_cards-grid ">
-            <div class="dataset-intro__detector-card">
-                <h4 class="dataset-intro__detector-card-title">YOLOX-X</h4>
-                <ul class="dataset-intro__detector-metric">
-                    <li class="dataset-intro__detector-metric">mAP@0.5:95: 0.626</li>
-                    <li class="dataset-intro__detector-metric">mAP@0.5: 0.805</li>
-                    <li class="dataset-intro__detector-metric">AR: 0.756</li>
-                </ul>
-            </div>
-            <div class="dataset-intro__detector-card">
-                <h4 class="dataset-intro__detector-card-title">YOLOX-L</h4>
-                <ul class="dataset-intro__detector-metric">
-                    <li class="dataset-intro__detector-metric">mAP@0.5:95: 0.603</li>
-                    <li class="dataset-intro__detector-metric">mAP@0.5: 0.794</li>
-                    <li class="dataset-intro__detector-metric">AR: 0.746</li>
-                </ul>
-            </div>
-            <div class="dataset-intro__detector-card">
-                <h4 class="dataset-intro__detector-card-title">YOLOX-S</h4>
-                <ul class="dataset-intro__detector-metric">
-                    <li class="dataset-intro__detector-metric">mAP@0.5:95: 0.542</li>
-                    <li class="dataset-intro__detector-metric">mAP@0.5: 0.764</li>
-                    <li class="dataset-intro__detector-metric">AR: 0.698</li>
-                </ul>
-            </div>
-            <div class="dataset-intro__detector-card">
-                <h4 class="dataset-intro__detector-card-title">YOLOv3</h4>
-                <ul class="dataset-intro__detector-metric">
-                    <li class="dataset-intro__detector-metric">mAP@0.5:95: 0.379</li>
-                    <li class="dataset-intro__detector-metric">mAP@0.5: 0.659</li>
-                    <li class="dataset-intro__detector-metric">AR: 0.549</li>
-                </ul>
-            </div>
-            <div class="dataset-intro__detector-card">
-                <h4 class="dataset-intro__detector-card-title">DETR</h4>
-                <ul class="dataset-intro__detector-metric">
-                    <li class="dataset-intro__detector-metric">mAP@0.5:95: 0.451</li>
-                    <li class="dataset-intro__detector-metric">mAP@0.5: 0.696</li>
-                    <li class="dataset-intro__detector-metric">AR: 0.645</li>
-                </ul>
-            </div>
-            <div class="dataset-intro__detector-card">
-                <h4 class="dataset-intro__detector-card-title">Def. DETR</h4>
-                <ul class="dataset-intro__detector-metric">
-                    <li class="dataset-intro__detector-metric">mAP@0.5:95: 0.510</li>
-                    <li class="dataset-intro__detector-metric">mAP@0.5: 0.737</li>
-                    <li class="dataset-intro__detector-metric">AR: 0.703</li>
-                </ul>
-            </div>
-            <div class="dataset-intro__detector-card">
-                <h4 class="dataset-intro__detector-card-title">Def. DETR 2-Stage</h4>
-                <ul class="dataset-intro__detector-metric">
-                    <li class="dataset-intro__detector-metric">mAP@0.5:95: 0.585</li>
-                    <li class="dataset-intro__detector-metric">mAP@0.5: 0.775</li>
-                    <li class="dataset-intro__detector-metric">AR: 0.761</li>
-                </ul>
-            </div>
-            <div class="dataset-intro__detector-card">
-                <h4 class="dataset-intro__detector-card-title">Cascade R-CNN r50</h4>
-                <ul class="dataset-intro__detector-metric">
-                    <li class="dataset-intro__detector-metric">mAP@0.5:95: 0.511</li>
-                    <li class="dataset-intro__detector-metric">mAP@0.5: 0.725</li>
-                    <li class="dataset-intro__detector-metric">AR: 0.680</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
-    <section class="dataset-intro__section dataset-intro__section--availability">
-        <h2 class="dataset-intro__section-title">Availability</h2>
-        <p class="dataset-intro__section-text">
-            The dataset will be available at <a href="https://fabianholst.github.io/BONK-pose/"
-                class="dataset-intro__link">fabianholst.github.io/BONK-pose</a>.
-        </p>
-        <div class="dataset-intro__citation">
-            <h3 class="dataset-intro__citation-title">Citation</h3>
-            <div class="dataset-intro__citation-text">
-                @dataset{bonk-pose,
-                title = {Fusing Monocular RGB Images with AIS Data to Create a 6D Pose Estimation Dataset for Marine
-                Vessels},
-                author = {Fabian Holst, Emre Gülsoylu, Simone Frintrop},
-                year = {2025},
-                url = {https://fabianholst.github.io/BONK-pose/}
-                }
+        <section class="dataset-intro__section dataset-intro__section--availability">
+            <h2 class="dataset-intro__section-title">Availability</h2>
+            <p class="dataset-intro__section-text">
+                The dataset will be available at <a href="https://fabianholst.github.io/BONK-pose/"
+                    class="dataset-intro__link">fabianholst.github.io/BONK-pose</a>.
+            </p>
+            <div class="dataset-intro__citation">
+                <h3 class="dataset-intro__citation-title">Citation</h3>
+                <div class="dataset-intro__citation-text">
+                    @dataset{bonk-pose,
+                    title = {Fusing Monocular RGB Images with AIS Data to Create a 6D Pose Estimation Dataset for Marine
+                    Vessels},
+                    author = {Fabian Holst, Emre Gülsoylu, Simone Frintrop},
+                    year = {2025},
+                    url = {https://fabianholst.github.io/BONK-pose/}
+                    }
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="dataset-intro__footer">
-        <p class="dataset-intro__footer-text">© 2025 BONK-pose Dataset. All rights reserved.</p>
-    </footer>
+        <footer class="dataset-intro__footer">
+            <p class="dataset-intro__footer-text">© 2025 BONK-pose Dataset. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 
