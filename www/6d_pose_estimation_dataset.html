@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Website for the BONK-pose dataset - Fabian Holst">
     <title>Bonk-pose Dataset</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="assets/icons/favicon.ico" />
@@ -28,6 +29,19 @@
             <p class="dataset-intro__section-text">
                 Currently, we are in the process of making the 6D pose estimation dataset fit for publication. This page
                 will be updated as soon as it becomes available to the public.
+            </p>
+            <p class="dataset-intro__section-text">
+                We plan to take inspiration from the format the KITTI dataset takes when doing the 3D Object Detection
+                Evaluation 2017 challenge.
+                Per image, we create a .txt containing the intrinsic camera matrix and a .json containing a list of
+                vessel objects with their pose and size.
+                <a href="https://github.com/FabianHolst/BONK-pose/tree/master/datasets/6D_pose_estimation">Our repo</a> contains a draft format of how the final dataset
+                could look like, but ideally we want to link the 6D annotations with the 2D ground truth where there is
+                overlap. Additionally we also want to publish the set of AIS messages per image, currently we are
+                looking into how this would be possible.
+            </p>
+            <p class="dataset-intro__section-text">
+                This page will update as soon as we finalize the data format.
             </p>
         </section>
     </div>
