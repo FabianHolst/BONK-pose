@@ -1,0 +1,53 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bonk-pose Dataset</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="assets/icons/favicon.ico" />
+</head>
+
+<body>
+    <div class="dataset-intro">
+        <header class="dataset-intro__header">
+            <div class="dataset-dataset-intro__header_logo_and_title">
+                <a href="/">
+                    <img src="assets/icons/Logo.svg" alt="BONK-pose Logo" class="dataset-intro__logo" />
+                </a>
+                <div>
+                    <h1 class="dataset-intro__title">BONK-pose</h1>
+                    <p class="dataset-intro__abbreviation"><b>B</b>oats <b>O</b>n <b>N</b>orderelbe at <b>K</b>ehrwieder
+                    </p>
+                </div>
+            </div>
+        </header>
+        <section>
+            <h2 class="dataset-intro__section-title">Object detection dataset</h2>
+            <p class="dataset-intro__section-text">
+                This page introduces the Object detection dataset we created in <a
+                    href="http://arxiv.org/abs/2508.14767"> our work</a>. It contains 1000 images with all vessel-like
+                objects annotated by humans. The dataset is provided in COCO format.
+            </p>
+            <p class="dataset-intro__section-text">
+                Our <a href="https://github.com/FabianHolst/BONK-pose">github repository</a> contains further
+                information
+                about the object detection dataset under the path <a
+                    href="https://github.com/FabianHolst/BONK-pose/tree/master/datasets/2D_vessel_detection_coco">"datasets/2D_vessel_detection_coco"</a>.
+                The github contains a heavily compressed version of the dataset, applying strong jpeg compression to the
+                images. Object detectors can handle this compressed dataset, but perform worse then on the original
+                dataset.
+                Next to the compressed zip, there is a truncated version of the original, showing a few images that
+                where
+                used in our work with their native quality.</p>
+            <p class="dataset-intro__section-text">
+                The full, native version of the dataset is available in the <a
+                    href="https://cloud.uni-hamburg.de/s/RRekicGgcwqmGJs">UHH cloud</a>.
+            </p>
+        </section>
+    </div>
+</body>
+
+</html>
