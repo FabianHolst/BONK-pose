@@ -1,6 +1,7 @@
 # 6D pose estimation dataset
 
-This folder contains a draft of how the final 6D pose estimation dataset could look like. THIS CAN BE SUBJECT TO CHANGE
+The labels files in this sample are not in the final format we used. See the dataset download for the final label structure. Updating this sample is a TODO.
+
 
 Files are associated by their name between folders.
 - calib: contains the intrinsic camera matrix, can be used to transform pose into pixel values as visualisation of the annotation. Read via 'np.loadtxt'
