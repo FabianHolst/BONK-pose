@@ -9,7 +9,7 @@ Files are associated by their name between folders.
 
 The top level contains the images with visualized annotations. These are not part of the dataset, but they can be created from it with no auxiliary data. 
 
-VisualizeDataset.py can be used to create these visualizations and also provide a starting point on how to load and use the dataset.
+VisualizeDataset.py can be used to create these visualizations and also provides a starting point on how to load and use the dataset.
 
 ## Commented annotation
 ```json
