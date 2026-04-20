@@ -1,0 +1,51 @@
+{
+    "objects": [
+        {
+            "identifier": "d0a0dfd306b6fa2d",
+            "bbImage2d": [
+                938.474365234375,
+                724.6226806640625,
+                1445.635986328125,
+                1062.1007080078125
+            ],
+            "height": 15,
+            "width": 13,
+            "length": 25,
+            "position": {
+                "centroid": [
+                    0.06641041953713511,
+                    -2.1864734037319806,
+                    317.2197980558469
+                ],
+                "eulerAngles": [
+                    [
+                        0.1363244655405067
+                    ],
+                    [
+                        2.224236347046055
+                    ],
+                    [
+                        -2.0488791617700226
+                    ]
+                ]
+            }
+        }
+    ],
+    "2d_annotation_gt": null,
+    "vessels": [
+        {
+            "identifier": "d0a0dfd306b6fa2d",
+            "lat": 53.54019,
+            "long": 9.979962,
+            "heading": 119,
+            "size": {
+                "to_stern": 13,
+                "to_bow": 12,
+                "to_starboard": 6,
+                "to_port": 7
+            },
+            "speed": 10.6,
+            "secondsSinceLastPositionReport": 8.484964999999647
+        }
+    ]
+}
