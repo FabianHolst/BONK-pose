@@ -4,7 +4,7 @@
   </h1>
 </div>
 
-[![PWC](https://img.shields.io/badge/%F0%9F%93%8E%20arXiv-Paper-red)]([https://arxiv.org/abs/2312.05270](https://arxiv.org/abs/2508.14767))
+[![PWC](https://img.shields.io/badge/%F0%9F%93%8E%20arXiv-Paper-red)](https://arxiv.org/abs/2508.14767)
 
 #  [BONK-pose](https://fabianholst.github.io/BONK-pose/)
 Boats On Norderelbe at Kehrwieder
